@@ -10,7 +10,7 @@ This service allows Celestia node operators to verify if their bridge node is on
 
 You can use the checker directly via our hosted web interface.
 
-1. Open the RPC port on your node:
+1. Open the RPC port on your node (change the UFW settings, if applicable):
    - Mainnet:
      ```bash
      sed -i '/$begin:math:display$RPC$end:math:display$/,/^\[/ s/Address = "localhost"/Address = "0.0.0.0"/' $HOME/.celestia-bridge/config.toml
