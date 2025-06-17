@@ -57,6 +57,10 @@ You can use the checker directly via our hosted web interface.
 - [Live Checker (Web)](https://dteam.tech/tools/celestia-bridge-health-checker)
 - [Celestia Docs](https://docs.celestia.org/)
 
-## Powered by
+---
 
-This tool is developed and maintained by [DTEAM](https://dteam.tech), supporting decentralized infrastructure.
+## Contributing
+
+We welcome all contributions to Celestia Bridge Health Checker (Web)! If you have ideas for new features, improvements, or bug fixes, feel free to open a pull request. We encourage open collaboration and appreciate your help in making this tool even more robust and user-friendly.
+
+If you prefer to discuss or propose improvements privately, or if you need further assistance, please send us an email at **contact@dteam.tech**. We’re excited to collaborate with the community to continually enhance this service.
