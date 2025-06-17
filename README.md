@@ -8,17 +8,17 @@ This service allows Celestia node operators to verify if their bridge node is on
 
 ## Usage
 
-You can use the checker directly via our hosted web interface.
+You can use the checker directly via our hosted web interface https://celestia-bridge-checker.dteam.tech.
 
 1. Open the RPC port on your node (change the UFW settings, if applicable):
    - Mainnet:
      ```bash
-     sed -i '/$begin:math:display$RPC$end:math:display$/,/^\[/ s/Address = "localhost"/Address = "0.0.0.0"/' $HOME/.celestia-bridge/config.toml
+     sudo sed -i '/\[RPC\]/,/^\[/ s/Address = "localhost"/Address = "0.0.0.0"/' $HOME/.celestia-bridge/config.toml
      sudo systemctl restart celestia-bridge
      ```
    - Testnet:
      ```bash
-     sed -i '/\[RPC\]/,/^\[/ s/Address = "localhost"/Address = "0.0.0.0"/' $HOME/.celestia-bridge-mocha-4/config.toml
+     sudo sed -i '/\[RPC\]/,/^\[/ s/Address = "localhost"/Address = "0.0.0.0"/' $HOME/.celestia-bridge-mocha-4/config.toml
      sudo systemctl restart celestia-bridge
      ```
 
@@ -29,11 +29,19 @@ You can use the checker directly via our hosted web interface.
      ```
    - Get your port:
      ```bash
-     awk -F' = ' '/\[RPC\]/ {flag=1; next} flag && /Port/ {gsub(/"/, "", $2); print $2; exit}'
+     #mainnet
+     sudo awk -F' = ' '/\[RPC\]/ {flag=1; next} flag && /Port/ {gsub(/"/, "", $2); print $2; exit}' $HOME/.celestia-bridge/config.toml
+
+     #testnet
+     sudo awk -F' = ' '/\[RPC\]/ {flag=1; next} flag && /Port/ {gsub(/"/, "", $2); print $2; exit}' $HOME/.celestia-bridge-mocha-4/config.toml
      ```
    - Get your authentication token:
      ```bash
+     #mainnet
      celestia bridge auth read
+
+     #testnet
+     celestia bridge auth read --p2p.network mocha-4
      ```
 
 3. Visit the website and input the data to check your node.
