@@ -53,16 +53,13 @@ You can use the checker directly via our hosted web interface https://celestia-b
 ## Examples
 
 ### 1. Homepage of the Celestia Bridge Health Checker
-
-
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/85a6d989-8ef0-470a-a796-903622596551" />
 
 ### 2. Filled-in form ready for check
-
-
+<img width="597" alt="image" src="https://github.com/user-attachments/assets/0259fa25-9da2-4305-b7fb-282905004f58" />
 
 ### 3. Successful check result
-
-
+<img width="1203" alt="image" src="https://github.com/user-attachments/assets/c359adf5-4e2f-4b40-89fe-2388938a1dff" />
 
 ## Links
 
