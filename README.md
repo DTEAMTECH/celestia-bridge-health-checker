@@ -1,6 +1,10 @@
 # Celestia Bridge Health Checker (Web)
 
+![bridge_health_checker_web](https://github.com/user-attachments/assets/a0aea1e9-d92f-4b6d-9b4d-29bcfa316b4a)
+
 A simple and effective tool to check the health of your Celestia Bridge node.
+
+---
 
 ## About
 
