@@ -102,7 +102,7 @@ const HealthChecker = () => {
                         value={token}
                         onChange={handleInputChange(setToken, () => '')}
                         error={errors.token}
-                        placeholder={"Example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJwdWJsaWMiLCJyZWFkIl19.gmAn6gC7chPwQ1nogCwS_jTelC5wMwOmL7gIOKwr4Gw"}
+                        placeholder={"Example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbG...FkIl19.gmAn6gC7chPwQ1nogCwS_jTelC5wMwOmL7gIOKwr4Gw"}
                     />
 
                     <Button onClick={handleSubmit} disabled={errors && false}
@@ -115,7 +115,7 @@ const HealthChecker = () => {
                 </div>
             </div>
 
-            <a target="__blank" href="https://github.com/DTEAMTECH/contributions/blob/main/celestia/README.md#celestia-bridge-health-checker-usage">How to use it?</a>
+            <a target="__blank" href="https://github.com/DTEAMTECH/celestia-bridge-health-checker">How to use it?</a>
         </section>
     );
 };
