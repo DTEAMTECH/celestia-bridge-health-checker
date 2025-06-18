@@ -63,7 +63,7 @@ You can use the checker directly via our hosted web interface https://celestia-b
 
 ## Links
 
-- [Live Checker (Web)](https://dteam.tech/tools/celestia-bridge-health-checker)
+- [Live Checker (Web)](https://celestia-bridge-checker.dteam.tech/)
 - [Celestia Docs](https://docs.celestia.org/)
 
 ## Contributing
